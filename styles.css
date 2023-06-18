@@ -12,44 +12,57 @@ body {
 .picture {
   display: block;
   margin: 5% auto;
-  max-width: 100%; /* Ensure the image doesn't exceed its container */
-  height: auto; /* Preserve the aspect ratio of the image */
+  max-width: 100%;
+  height: auto;
 }
 
 .main {
   text-align: center;
 }
 
-ul {
-  padding: 0;
-}
-
 li {
   list-style: none;
+  margin: 30px 0;
 }
 
 .main ul {
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
 
+a {
+  background-color: rgb(54, 119, 76);
+  padding: 25px;
+  color: #fff;
+  text-decoration: none;
+  flex-basis: 100%; /* Set equal length for link boxes */
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+a:hover,
+a:focus {
+  background-color: rgb(39, 73, 51);
+}
+
 /* Media Query for Mobile Devices */
 @media only screen and (max-width: 600px) {
   .header {
-    font-size: 24px; /* Adjust the font size for the header */
+    font-size: 24px;
   }
 
   .picture {
-    margin: 2% auto; /* Adjust the margin for the picture */
+    margin: 2% auto;
   }
 
   .main h3 {
-    font-size: 18px; /* Adjust the font size for the main heading */
+    font-size: 22px;
   }
 
   .main ul {
-    font-size: 16px; /* Adjust the font size for the list items */
+    font-size: 18px;
   }
 }
